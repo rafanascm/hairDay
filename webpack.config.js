@@ -6,6 +6,12 @@ module.exports = {
   target: 'web',
   mode: 'development',
 
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
+
   entry: path.resolve(__dirname, 'src', 'main.js'),
   output: {
     filename: 'main.js',
